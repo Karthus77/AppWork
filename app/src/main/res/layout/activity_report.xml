@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="成绩评估"
+                        android:textColor="#3299CC"
+                        android:layout_marginTop="20sp"
+                        android:textSize="30sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/enterBack1"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="20sp"
+                        android:src="@drawable/back">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/AnalyseEnter"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="20sp"
+                        android:src="@drawable/report">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background">
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="高等数学"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10sp"
+                        android:textColor="#3299CC"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/scoreMath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="成绩:"
+                        android:textSize="20dp">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/rateMath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:text="A"
+                        android:textSize="40dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/gpaMath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="160dp"
+                        android:text="绩点:"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大学英语"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10sp"
+                        android:textColor="#3299CC"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/scoreEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="成绩:"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/rateEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:text="A"
+                        android:textSize="40dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/gpaEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="160dp"
+                        android:text="绩点:"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计算机导论"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10sp"
+                        android:textColor="#3299CC"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/scoreCS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="成绩:"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/rateCS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:text="A"
+                        android:textSize="40dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/gpaCS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="160dp"
+                        android:text="绩点:"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C语言程序设计"
+                        android:textSize="20dp"
+                        android:textColor="#3299CC"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/scoreC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="成绩:"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/rateC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:text="A"
+                        android:textSize="40dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/gpaC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="160dp"
+                        android:text="绩点:"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="120dp"
+                    android:layout_height="120sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/circle">
+
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/weightScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="50dp"
+                    android:text="78.50"
+                    android:textColor="#3299CC"
+                    android:textSize="30sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/totalScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginBottom="10dp"
+                    android:text="总学分:"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/totalGpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image3"
+                    android:text="绩点:"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/re1"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="20sp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10sp"
+                        android:src="@drawable/re2"
+                        android:layout_marginLeft="20sp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/stability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/image1"
+                        android:text="稳定性:"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/stabilityResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stability"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/image1"
+                        android:text="良好"
+                        android:textSize="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/overallRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/image2"
+                        android:layout_centerVertical="true"
+                        android:text="综合评级:"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/overallRankResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/overallRank"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_toRightOf="@id/image2"
+                        android:text="A"
+                        android:textSize="50sp" >
+
+                    </TextView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

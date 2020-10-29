@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/id1">
+            </ImageView>
+            <ImageView
+                android:id="@+id/page"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/next"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="20sp">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/guide"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/tip">
+
+            </ImageView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高等数学"
+                    android:textSize="16sp"
+                    android:textColor="#3299CC"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginTop="10sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/EnterMath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:hint="请输入成绩"
+                    android:inputType="number"
+                    android:textSize="10sp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/gradeMath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:hint="请输入学分:"
+                    android:inputType="number"
+                    android:textSize="10sp">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C语言程序设计"
+                    android:textSize="16sp"
+                    android:textColor="#3299CC"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginTop="10sp">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/EnterC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入成绩"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:layout_marginLeft="25sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/gradeC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:hint="请输入学分:"
+                    android:inputType="number"
+                    android:textSize="10sp">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大学英语"
+                    android:textSize="16sp"
+                    android:textColor="#3299CC"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginTop="10sp">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/EnterEnglish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入成绩"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:layout_marginLeft="25sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/gradeEnglish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:hint="请输入学分:"
+                    android:inputType="number"
+                    android:textSize="10sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计算机导论"
+                    android:textSize="16sp"
+                    android:textColor="#3299CC"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginTop="10sp">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/EnterComputer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入成绩"
+                    android:ems="10"
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:layout_marginLeft="25sp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/gradeCS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:hint="请输入学分:"
+                    android:inputType="number"
+                    android:textSize="10sp">
+
+                </EditText>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/EnterNext"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="生成报告"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="#3299CC">
+
+
+                </Button>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
