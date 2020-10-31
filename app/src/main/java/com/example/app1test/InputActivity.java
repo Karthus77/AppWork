@@ -78,16 +78,22 @@ public class InputActivity extends AppCompatActivity {
                 {
                     Toast.makeText(InputActivity.this,"输入不能为空!",Toast.LENGTH_LONG).show();
                 }
-                else {
-                    int gM = Integer.parseInt(gMath);
-                    int gE = Integer.parseInt(gEnglish);
-                    int gC = Integer.parseInt(gCl);
-                    int gCS = Integer.parseInt(gCS1);
-                    int m = Integer.parseInt(math);
-                    int E = Integer.parseInt(English);
-                    int c = Integer.parseInt(C);
-                    int cs = Integer.parseInt(CS);
-                    if (m <= 100 && m >= 0 && E <= 100 && E >= 0 && c <= 100 && c >= 0 && cs >= 0 && cs <= 100 && gM <= 10 && gM >= 0 && gE <= 10 && gE >= 0 && gC <= 10 && gC >= 0 && gCS >= 0 && gCS <= 10) {
+                else if (math.length() > 3 || English.length() > 3 || C.length() > 3 || CS.length() > 3|| gMath.length() > 3 || gEnglish.length() > 3 || gCl.length() > 3 || gCS1.length() > 3) {
+                    Toast.makeText(InputActivity.this, "您输入的数据过大!", Toast.LENGTH_LONG).show();
+                }
+
+
+                    else
+                {
+
+                int gM = Integer.parseInt(gMath);
+                int gE = Integer.parseInt(gEnglish);
+                int gC = Integer.parseInt(gCl);
+                int gCS = Integer.parseInt(gCS1);
+                int m = Integer.parseInt(math);
+                int E = Integer.parseInt(English);
+                int c = Integer.parseInt(C);
+                int cs = Integer.parseInt(CS);
                         Toast.makeText(InputActivity.this, "生成成功!", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(InputActivity.this, ReportActivity.class);
                         Bundle bd = new Bundle();
@@ -107,14 +113,11 @@ public class InputActivity extends AppCompatActivity {
                         startActivity(intent);
 
                     }
-                    else {
-                        Toast.makeText(InputActivity.this, "您输入的数据过大!", Toast.LENGTH_LONG).show();
-                    }
+
                 }
 
 
 
 
-    }
-});
-    }}
+    });}}
+
