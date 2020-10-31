@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +21,10 @@ public class InputActivity extends AppCompatActivity {
     private EditText gradC;
     private EditText gradCS;
     private EditText gradEnglish;
+    private EditText subjectFirst;
+    private EditText subjectSecond;
+    private EditText subjectThird;
+    private EditText subjectFourth;
     private ImageView guide;
     private ImageView page;
 
@@ -36,6 +41,10 @@ public class InputActivity extends AppCompatActivity {
         gradC = findViewById(R.id.gradeC);
         gradEnglish =findViewById(R.id.gradeEnglish);
         gradCS =findViewById(R.id.gradeCS);
+        subjectFirst=findViewById(R.id.subjectFirst);
+        subjectSecond=findViewById(R.id.subjectSecond);
+        subjectThird=findViewById(R.id.subjectThird);
+        subjectFourth=findViewById(R.id.subjectFourth);
         guide =findViewById(R.id.guide);
         page =findViewById(R.id.page);
         guide.setOnClickListener(new View.OnClickListener() {
@@ -61,34 +70,51 @@ public class InputActivity extends AppCompatActivity {
                 String gEnglish =gradEnglish.getText().toString();
                 String gCl=gradC.getText().toString();
                 String gCS1=gradCS.getText().toString();
-                int gM= Integer.parseInt(gMath);
-                int gE= Integer.parseInt(gEnglish);
-                int gC = Integer.parseInt(gCl);
-                int gCS =Integer.parseInt(gCS1);
-                int m = Integer.parseInt(math);
-                int E = Integer.parseInt(English);
-                int c = Integer.parseInt(C);
-                int cs = Integer.parseInt(CS);
-                if (m <=100 && m >= 0 && E <= 100 && E >= 0 && c <= 100 && c >= 0 && cs >= 0 && cs <= 100&&gM<=10&&gM>=0&&gE<=10&&gE>=0&&gC<=10&&gC>=0&&gCS>=0&&gCS<=10) {
-                    Toast.makeText(InputActivity.this,"生成成功!",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(InputActivity.this, ReportActivity.class);
-                    Bundle bd =new Bundle();
-                    bd.putInt("gradeMath",gM);
-                    bd.putInt("gradeC",gC);
-                    bd.putInt("gradeEnglish",gE);
-                    bd.putInt("gradeCS",gCS);
-                    bd.putInt("math",m);
-                    bd.putInt("English",E);
-                    bd.putInt("C",c);
-                    bd.putInt("CS",cs);
-                    intent.putExtras(bd);
-                    startActivity(intent);
-
-                } else {
-                    Toast.makeText(InputActivity.this, "请正确输入!", Toast.LENGTH_LONG).show();
+                String titleFirst=subjectFirst.getText().toString();
+                String titleSecond=subjectSecond.getText().toString();
+                String titleThird=subjectThird.getText().toString();
+                String titleFourth=subjectFourth.getText().toString();
+                if(TextUtils.isEmpty(math)||TextUtils.isEmpty(English)||TextUtils.isEmpty(C)||TextUtils.isEmpty(CS)||TextUtils.isEmpty(gMath)||TextUtils.isEmpty(gEnglish)||TextUtils.isEmpty(gCl)||TextUtils.isEmpty(gCS1)||TextUtils.isEmpty(titleFirst)||TextUtils.isEmpty(titleSecond)||TextUtils.isEmpty(titleThird)||TextUtils.isEmpty(titleFourth))
+                {
+                    Toast.makeText(InputActivity.this,"输入不能为空!",Toast.LENGTH_LONG).show();
                 }
-            }
-        });
+                else {
+                    int gM = Integer.parseInt(gMath);
+                    int gE = Integer.parseInt(gEnglish);
+                    int gC = Integer.parseInt(gCl);
+                    int gCS = Integer.parseInt(gCS1);
+                    int m = Integer.parseInt(math);
+                    int E = Integer.parseInt(English);
+                    int c = Integer.parseInt(C);
+                    int cs = Integer.parseInt(CS);
+                    if (m <= 100 && m >= 0 && E <= 100 && E >= 0 && c <= 100 && c >= 0 && cs >= 0 && cs <= 100 && gM <= 10 && gM >= 0 && gE <= 10 && gE >= 0 && gC <= 10 && gC >= 0 && gCS >= 0 && gCS <= 10) {
+                        Toast.makeText(InputActivity.this, "生成成功!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(InputActivity.this, ReportActivity.class);
+                        Bundle bd = new Bundle();
+                        bd.putInt("gradeMath", gM);
+                        bd.putInt("gradeC", gC);
+                        bd.putInt("gradeEnglish", gE);
+                        bd.putInt("gradeCS", gCS);
+                        bd.putInt("math", m);
+                        bd.putInt("English", E);
+                        bd.putInt("C", c);
+                        bd.putInt("CS", cs);
+                        bd.putString("First", titleFirst);
+                        bd.putString("Second", titleSecond);
+                        bd.putString("Third", titleThird);
+                        bd.putString("Fourth", titleFourth);
+                        intent.putExtras(bd);
+                        startActivity(intent);
+
+                    }
+                    else {
+                        Toast.makeText(InputActivity.this, "您输入的数据过大!", Toast.LENGTH_LONG).show();
+                    }
+                }
+
+
+
 
     }
-}
+});
+    }}

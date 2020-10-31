@@ -15,6 +15,10 @@ public class AnalyseActivity extends AppCompatActivity {
     private TextView csSuggestion;
     private ImageView back;
     private TextView suggestion;
+    private TextView one;
+    private TextView two;
+    private TextView three;
+    private TextView four;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,10 @@ public class AnalyseActivity extends AppCompatActivity {
         TextView csSuggestion=findViewById(R.id.csSuggestion);
         TextView suggestion=findViewById(R.id.suggestion);
         ImageView back=findViewById(R.id.enterBack2);
+        one=findViewById(R.id.anOne);
+        two=findViewById(R.id.anTwo);
+        three=findViewById(R.id.anThree);
+        four=findViewById(R.id.anFour);
         Intent it2=getIntent();//获得数据
         Bundle bt=it2.getExtras();
         int Math=bt.getInt("Math");
@@ -34,6 +42,14 @@ public class AnalyseActivity extends AppCompatActivity {
         int CS=bt.getInt("CS");
         double grade=bt.getDouble("overall");
         double fangCha=bt.getDouble("fc");
+        String numberOne=bt.getString("one");
+        String numberTwo=bt.getString("two");
+        String numberThree=bt.getString("three");
+        String numberFour=bt.getString("four");
+        one.setText(numberOne);
+        two.setText(numberTwo);
+        three.setText(numberThree);
+        four.setText(numberFour);
         if(grade>=80&&fangCha<=4)
         {
             suggestion.setText("你的总体成绩表现为优秀，各科成绩比较稳定");

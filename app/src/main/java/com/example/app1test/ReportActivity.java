@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,6 +31,10 @@ public class ReportActivity extends AppCompatActivity {
     private TextView weightScore;
     private TextView stabilityResult;
     private TextView overallRankResult;
+    private TextView first;
+    private TextView second;
+    private TextView third;
+    private TextView fourth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +59,10 @@ public class ReportActivity extends AppCompatActivity {
             TextView overallRank=findViewById(R.id.overallRank);
             TextView weightScore=findViewById(R.id.weightScore);
             TextView stabilityResult=findViewById(R.id.stabilityResult);
+            TextView first=findViewById(R.id.firstSubject);
+            TextView second=findViewById(R.id.secondSubject);
+            TextView third=findViewById(R.id.thirdSubject);
+            TextView fourth=findViewById(R.id.fourthSubject);
             final TextView overallRankResult=findViewById(R.id.overallRankResult);
         Intent it1=getIntent();
         Bundle bd=it1.getExtras();//获得输入数据
@@ -65,6 +74,14 @@ public class ReportActivity extends AppCompatActivity {
         int gradeEnglish=bd.getInt("gradeEnglish");
         int gradeC=bd.getInt("gradeC");
         int gradeCS=bd.getInt("gradeCS");
+        final String titleF=bd.getString("First");
+        final String titleS=bd.getString("Second");
+        final String titleT=bd.getString("Third");
+        final String titleFo=bd.getString("Fourth");
+        first.setText(titleF);
+        second.setText(titleS);
+        third.setText(titleT);
+        fourth.setText(titleFo);
         double XueFen=gradeC+gradeCS+gradeEnglish+gradeMath; //总学分
         String resultScore=String.format("%.2f",XueFen);
         totalScore.setText("总学分:"+String.valueOf(resultScore));
@@ -389,6 +406,10 @@ public class ReportActivity extends AppCompatActivity {
                 bt.putInt("CS",cs);
                 bt.putDouble("overall",WeightGrade);
                 bt.putDouble("fc",fangCha);
+                bt.putString("one",titleF);
+                bt.putString("two",titleS);
+                bt.putString("three",titleT);
+                bt.putString("four",titleFo);
                 intent2.putExtras(bt);
                 startActivity(intent2);
             }
