@@ -45,20 +45,6 @@ public class InputActivity extends AppCompatActivity {
         subjectSecond=findViewById(R.id.subjectSecond);
         subjectThird=findViewById(R.id.subjectThird);
         subjectFourth=findViewById(R.id.subjectFourth);
-        guide =findViewById(R.id.guide);
-        page =findViewById(R.id.page);
-        guide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(InputActivity .this,"详情请查阅使用说明",Toast.LENGTH_LONG).show();
-            }
-        });
-        page.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(InputActivity.this,"这个按键只是一个摆设",Toast.LENGTH_LONG).show();
-            }
-        });
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,8 +64,8 @@ public class InputActivity extends AppCompatActivity {
                 {
                     Toast.makeText(InputActivity.this,"输入不能为空!",Toast.LENGTH_LONG).show();
                 }
-                else if (math.length() > 3 || English.length() > 3 || C.length() > 3 || CS.length() > 3|| gMath.length() > 3 || gEnglish.length() > 3 || gCl.length() > 3 || gCS1.length() > 3) {
-                    Toast.makeText(InputActivity.this, "您输入的数据过大!", Toast.LENGTH_LONG).show();
+                else if (math.length() > 3 || English.length() > 3 || C.length() > 3 || CS.length() > 3|| gMath.length() > 3 || gEnglish.length() > 3 || gCl.length() > 3 || gCS1.length() > 3||titleFirst.length()>10||titleSecond.length()>10||titleThird.length()>10||titleFourth.length()>10) {
+                    Toast.makeText(InputActivity.this, "您输入的数据或字符过大!", Toast.LENGTH_LONG).show();
                 }
 
 

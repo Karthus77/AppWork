@@ -112,11 +112,11 @@
                         </TextView>
                         <TextView
                             android:id="@+id/anOne"
-                            android:layout_width="wrap_content"
+                            android:layout_width="90sp"
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@id/book1"
                             android:text="高等数学"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="20sp"
                             android:layout_marginLeft="10sp"
                             android:textColor="#3299CC">
@@ -156,11 +156,11 @@
                         </TextView>
                         <TextView
                             android:id="@+id/anTwo"
-                            android:layout_width="wrap_content"
+                            android:layout_width="90sp"
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@id/book2"
                             android:text="大学英语"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="20sp"
                             android:layout_marginLeft="10sp"
                             android:textColor="#3299CC">
@@ -207,11 +207,11 @@
                         </TextView>
                         <TextView
                             android:id="@+id/anThree"
-                            android:layout_width="wrap_content"
+                            android:layout_width="90sp"
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@id/book3"
                             android:text="计算机导论"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="20sp"
                             android:layout_marginLeft="10sp"
                             android:textColor="#3299CC">
@@ -252,11 +252,11 @@
                         </TextView>
                         <TextView
                             android:id="@+id/anFour"
-                            android:layout_width="wrap_content"
+                            android:layout_width="90sp"
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@id/book4"
                             android:text="C语言程序设计"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="20sp"
                             android:layout_marginLeft="10sp"
                             android:textColor="#3299CC">

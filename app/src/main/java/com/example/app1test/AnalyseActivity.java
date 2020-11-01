@@ -19,6 +19,7 @@ public class AnalyseActivity extends AppCompatActivity {
     private TextView two;
     private TextView three;
     private TextView four;
+    private ImageView face;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class AnalyseActivity extends AppCompatActivity {
         TextView csSuggestion=findViewById(R.id.csSuggestion);
         TextView suggestion=findViewById(R.id.suggestion);
         ImageView back=findViewById(R.id.enterBack2);
+        ImageView face=findViewById(R.id.circle2);
         one=findViewById(R.id.anOne);
         two=findViewById(R.id.anTwo);
         three=findViewById(R.id.anThree);
@@ -53,30 +55,37 @@ public class AnalyseActivity extends AppCompatActivity {
         if(grade>=80&&fangCha<=4)
         {
             suggestion.setText("你的总体成绩表现为优秀，各科成绩比较稳定");
+            face.setImageResource(R.drawable.face1);
         }
         else if(grade>80&&fangCha>4)
         {
             suggestion.setText("你的总体成绩表现为优秀，但存在偏科现象，请注意！");
+            face.setImageResource(R.drawable.face1);
         }
         else if(grade>70&&fangCha>4&&fangCha<10)
         {
             suggestion.setText("你的成绩一般且存在偏科现象，请注意！");
+            face.setImageResource(R.drawable.hhhh);
         }
         else if(grade>70&&fangCha<=4)
         {
             suggestion.setText("你的成绩一般,但还好比较稳定");
+            face.setImageResource(R.drawable.hhhh);
         }
         else if(grade>70&&fangCha>=10)
         {
             suggestion.setText("你的成绩一般，但偏科有点严重啊！");
+            face.setImageResource(R.drawable.hhhh);
         }
         else if(grade>60)
         {
             suggestion.setText("好好学习吧，你还是有机会的");
+            face.setImageResource(R.drawable.face2);
         }
         else
         {
             suggestion.setText("小伙子，你这成绩就不用我给你分析了吧！");
+            face.setImageResource(R.drawable.face2);
         }
         if(Math>=90)
         {
