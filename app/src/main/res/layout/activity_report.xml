@@ -401,7 +401,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/image1"
                         android:text="稳定性:"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:layout_marginTop="20sp">
 
                     </TextView>
@@ -426,7 +426,7 @@
                         android:layout_toRightOf="@id/image2"
                         android:layout_centerVertical="true"
                         android:text="综合评级:"
-                        android:textSize="20sp">
+                        android:textSize="15sp">
 
                     </TextView>
 
