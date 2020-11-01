@@ -97,7 +97,7 @@
 
                 </EditText>
                 <EditText
-                    android:id="@+id/EnterC"
+                    android:id="@+id/EnterEnglish"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="请输入您的成绩(0~100)"
@@ -107,7 +107,7 @@
 
                 </EditText>
                 <EditText
-                    android:id="@+id/gradeC"
+                    android:id="@+id/gradeEnglish"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25sp"
@@ -138,7 +138,7 @@
 
                 </EditText>
                 <EditText
-                    android:id="@+id/EnterEnglish"
+                    android:id="@+id/EnterComputer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="请输入您的成绩(0~100)"
@@ -148,7 +148,7 @@
 
                 </EditText>
                 <EditText
-                    android:id="@+id/gradeEnglish"
+                    android:id="@+id/gradeCS"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25sp"
@@ -179,7 +179,7 @@
 
                 </EditText>
                 <EditText
-                    android:id="@+id/EnterComputer"
+                    android:id="@+id/EnterC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="请输入您的成绩(0~100)"
@@ -191,7 +191,7 @@
                 </EditText>
 
                 <EditText
-                    android:id="@+id/gradeCS"
+                    android:id="@+id/gradeC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25sp"
