@@ -12,10 +12,12 @@
 该部分对用户输入进行了限制，不按要求输入则无法生成报告
 
 报告界面
+
 <img src="http://tva1.sinaimg.cn/large/0075eY9gly1h717gys09lj30u01t0wp2.jpg" width="30%"/>
 
-
 分析报告成绩
+
+
 <img src="http://tva1.sinaimg.cn/large/0075eY9gly1h717hi6wayj30u01t0gvl.jpg" width="30%"/>
 
 
